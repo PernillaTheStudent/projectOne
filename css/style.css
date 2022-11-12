@@ -1,0 +1,229 @@
+:root {
+    --accent-color: #0C6969;
+    --accent-color-play-a: #FDB7B9;
+    --accent-color-play-b: #60BFC1;
+    --accent-color-play-c: #FFD166;
+    --background-color-primary: #FBFBF2;
+    --background-color-secondary: #BADFD7;
+    --background-color-light-a: #FCF5DE;
+    --background-color-light-b: #FDEADB;
+    --background-color-light-c: #E8F3EA;
+    --primary-frame-border: #FFD166;
+    --primary-header-color: #0C6969;
+    --primary-text-color: #112131;
+    --secondary-frame-border: #60BFC0;
+    --secondary-frame-border: #0c6969;
+    --secondary-frame-border: #60BFC1;
+    --secondary-text-color: #FBFBF2;
+    --secondary-header-color: #FBFBF2;
+
+    --indent-base: 16px;
+
+    --grid-base: 103px;
+    --grid-max-width: 1284px;
+    --link-font-size: 1.4rem;
+    --link-font-weight: 500;
+    --link-letter-spacing: 0.25px;
+    --link-line-height: 2rem;
+    --margin-2x: 8px;
+    --margin-2x: 12px;
+    --margin-4x: 16px;
+    --margin-5x: 20px;
+    --margin-6x: 24px;
+    --margin-7x: 28px;
+    --margin-8x: 32px;
+    --margin-9x: 36px;
+    --margin-10x: 40px;
+
+    --margin-frame-wrapper-x: 40px;
+    --margin-frame-wrapper-top: 40px;
+    --logo-width: calc(3*var(--margin-frame-wrapper-x));
+    --width-aside: 40vw;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    height: 100vh;
+}
+
+/* inherit box-sizing from .html */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary-header-color);
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+p {
+    color: var(--primary-text-color);
+    font-size: 24px;
+    line-height: 175%;
+    font-weight: 500;
+}
+
+.frame-wrapper header h1 {
+    margin-left: calc(var(--logo-width));
+    margin-left: 30px;
+    padding-top: 65px;
+}
+.frame-wrapper header h1 span {
+    display: block;
+    margin-left: 40px;
+}
+
+img#logo {
+    position: absolute;
+    width: var(--logo-width);
+    width: 160px;
+    margin-left: calc(-1*var(--margin-frame-wrapper-x));
+    margin-top: calc(-1*var(--margin-frame-wrapper-top));
+    margin-top: -100px;
+}
+
+body {
+    background-color: var(--primary-frame-border);
+    height: 100%;
+    margin: 0;
+}
+
+.frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: var(--margin-frame-wrapper-top) var(--margin-frame-wrapper-x) 400px;
+    padding: 100px var(--margin-frame-wrapper-x) 400px;
+    background-color: var(--secondary-frame-border);
+    background-image: url('../images/footer-wave.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    max-width: 1024px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--background-color-primary);
+    height: 300px;
+    border-radius: 12px 12px 0 0;
+    padding-right: 3rem;
+}
+
+.header-content {
+    background-repeat: no-repeat;
+    background-image:
+        url("../images/top-wave.png"),
+        url("../images/bottom-wave.png");
+    background-position:
+        right -40px,
+        right bottom;
+    background-size:
+        var(--width-aside),
+        var(--width-aside);
+    height: 100%;;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+main {
+    background: var(--background-color-primary);
+    background-color: var(--background-color-light-a);
+    border-radius: 0 0 100px 12px;
+    display: flex;
+    width: 100%;
+    padding-right: 3rem;
+    padding-bottom: 17rem;
+    margin-bottom: 2rem;
+}
+
+.content-wrapper {
+    width: 100%;
+    /* display: flex;
+    flex-flow: row wrap; */
+}
+
+.row-content {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+    padding-left: 3rem;
+}
+
+.variation-one {
+    background: var(--background-color-light-a);
+}
+
+.variation-two {
+    background: var(--background-color-light-b);
+}
+
+article {
+    flex: 1 0 25%;
+    padding: 40px;
+}
+
+.aside {
+    background-color: var(--background-color-secondary);
+    flex: none;
+    display: flex;
+    width: var(--width-aside);
+    padding: 48px;
+    border-radius: 0 0 20px 0;
+    margin-bottom: -3rem;
+}
+
+.game-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.image {
+    max-width: 176px;
+    Xmin-width: 150px;
+    flex: 1 0 42%;
+    margin: 8px;
+    border: 3px solid var(--accent-color);
+    background: var(--background-color-primary);
+    border-radius: 7px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .frame-wrapper {
+        background-color: var(--primary-frame-border);
+    }
+
+}
