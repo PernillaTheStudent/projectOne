@@ -274,7 +274,7 @@ img#logo {
 #banner {
     background-color: var(--background-color-primary);
     height: 312px;
-    border-radius: 12px 12px 0 0;
+    border-radius: var(--indent-3x) var(--indent-3x) 0 0;
     padding-right: 3rem;
 }
 
@@ -299,7 +299,7 @@ img#logo {
 main#content {
     background: var(--background-color-primary);
     background-color: var(--background-color-light-a);
-    border-radius: 0 0 100px 12px;
+    border-radius: 0 0 100px var(--indent-3x);
     display: flex;
     width: 100%;
     padding-right: 3rem;
@@ -337,7 +337,7 @@ article {
     display: flex;
     width: var(--width-aside);
     padding: 48px;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 var(--indent-5x) 0;
     margin-bottom: -3rem;
 }
 
@@ -357,7 +357,7 @@ article {
     margin: 8px;
     border: 3px solid var(--accent-color);
     background: var(--background-color-primary);
-    border-radius: 7px;
+    border-radius: var(--indent-2x);
 }
 footer {
     display: flex;
@@ -387,6 +387,9 @@ footer .column a:hover {
 } */
 
 img#hamburger-menu {
+    display: none;
+}
+.mobile-menu {
     display: none;
 }
 
@@ -419,11 +422,28 @@ img#hamburger-menu {
     .top-navigation #register {
         display: none;
     }
-    img#hamburger-menu {
+    img#hamburger-menu-icon {
         display:block;
         width: 40px;
     }
-    
+    .hamburger-menu:hover + .mobile-menu {
+        right: -2px;
+    }
+    .mobile-menu {
+        display: block;
+        background-color: var(--background-color-primary);
+        position: fixed;
+        right: -150%;
+        margin-top: 278px;
+        transition: right 1s;
+        padding: var(--indent-8x) var(--indent-8x) 56px;
+        border-radius: 0 0 0 40px;
+        border-left: 8px solid var(--background-color-secondary);
+    }
+    .mobile-menu a,
+    .mobile-menu a:link {
+        padding: 0 var(--indent-4x) var(--indent-4x);
+    }
     h1 {
         font-size: calc(0.5 * var(--header1-font-size));
     }
