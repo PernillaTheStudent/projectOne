@@ -7,72 +7,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/typography.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="frame-wrapper">
+    <div id="document-container">
         <header>
             <img id="logo" src="../images/Logo.png" alt="LOGO" />
-            <div class="header-content">
-                <h1>Candy<span>game</span></h1>
-            </div>
+            <nav>
+                <div class="top-navigation align-items">
+                    <a class="button primary" href="#" id="playground">Playground</a>
+                    <div class="top-nav-right">
+                        <a href="#" onclick="Site.hamburgerMenuClicked()">
+                            <img id="hamburger-menu" src="../images/hamburger-menu.png" width="100%" alt="menu" title="menu">
+                        </a>
+                        <a class="button secondary" href="#" id="sign-in">Log in</a>
+                        <a href="#" id="register">Register</a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <main>
+        <div id="banner">
+            <div class="banner-content">
+                <h1>Candy<span>game</span></h1>
+            </div>
+        </div>
+
+        <main id="content">
             <div class="content-wrapper">
-                <div class="row-content variation-one">
-                    <article>
-                        <h2>The Journey Begins</h2>
-                        <p>Eiusmod ad fugiat sit est aute. Ad incididunt non cillum quis occaecat enim id. Incididunt ea
-                            nulla
-                            dolor quis culpa dolore esse. </p>
-                    </article>
-                </div>
-                <div class="row-content variation-two">
-                    <article>
-                        <h2>Trusted Friends for holding Candy Basket</h2>
-                        <p>Reprehenderit laboris pariatur occaecat nulla incididunt anim ex id id esse. Proident mollit
+                <article class="row-content variation-one">
+                    <h2>The Journey Begins</h2>
+                    <p>Enim non occaecat nostrud Lorem est ipsum et in voluptate cupidatat in. Tempor officia culpa
+                        ex nisi ullamco consectetur qui non nulla. Anim tempor aliquip occaecat aliqua laborum in
+                        consectetur sunt eu occaecat aliquip duis incididunt.</p>
+                    <p>Eiusmod ad fugiat sit est aute. Ad incididunt non cillum quis occaecat enim id.
+                        Incididunt ea
+                        nulla
+                        dolor quis culpa dolore esse. </p>
+                    <div class="button-container">
+                        <a class="button primary" href="#">Go Play</a>
+                        <a class="button third" href="#">Register</a>
+                    </div>
+                </article>
+                <article class="row-content variation-two">
+                    <h3 class="color-b">Trusted Friends for holding Candy Basket</h2>
+                        <p>Reprehenderit laboris pariatur occaecat nulla incididunt anim ex id id esse. Proident
+                            mollit
                             sunt
                             cupidatat magna eiusmod voluptate fugiat sint tempor dolor incididunt voluptate. Nisi
                             pariatur
                             aliquip non officia cupidatat. Nostrud aute magna ad do laboris sunt est aliquip sit
                             occaecat
                             aute in ut.</p>
-                    </article>
-                </div>
+                </article>
             </div>
             <div class="aside">
                 <section class="game-items">
                     <div class="image">
-                        <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
                     </div>
                     <div class="image">
-                        <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
                     </div>
                     <div class="image">
-                        <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
                     </div>
                     <div class="image">
-                        <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
                     </div>
                     <div class="image">
-                        <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
                     </div>
                     <div class="image">
-                        <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
                     </div>
                 </section>
             </div>
-
         </main>
-
         <footer>
-            <button type="button">Log In</button>
-            <nav id="main-navigation">
+            <div class="column first">
                 <a href="#">Playground</a>
+                <a href="#">Sign in</a>
+                <a href="#">Register</a>
+            </div>
+            <div class="column second">
+                <a href="#">Help</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-            </nav>
+            </div>
         </footer>
     </div>
 </body>
