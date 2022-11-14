@@ -1,6 +1,6 @@
 form {
     width: 100%;
-    padding: var(--indent-2x);
+    padding: var(--indent-2x) 0;
     border-radius: var(--indent-2x);
     font-family: var(--font-family);
 }
@@ -52,6 +52,7 @@ button {
     margin-bottom: var(--indent-3x);
     border: none;
     appearance: none;
+    letter-spacing: var(--link-letter-spacing);
 }
 
 button:hover {
