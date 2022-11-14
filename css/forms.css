@@ -73,7 +73,7 @@ legend {
 label {
     font-size: var(--font-size-paragraph);
     display: block;
-    margin-top: var(--indent-6x);
+    margin-top: var(--indent-4x);
     line-height: 140%;
 }
 

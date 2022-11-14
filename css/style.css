@@ -54,12 +54,12 @@
     --header-secondary-color: #FBFBF2;
     --header1-font-size: 8.8rem;
     --header2-font-size: 3.6rem;
-    --header3-font-size: 3.2rem;
+    --header3-font-size: 2.8rem;
     --header1-line-height: 100%;
     --header2-line-height: 120%;
-    --header3-line-height: 120%;
+    --header3-line-height: 130%;
     --header-font-weight: 700;
-    --header-letter-spacing: 0.25px;
+    --header-letter-spacing: 1px;
 
     --link-font-size: 2rem;
     --link-font-weight: 600;
@@ -105,6 +105,7 @@ h4 {
     padding-bottom: var(--indent-3x);
     padding-top: var(--indent-2x);
     font-family: var(--header-secondary-font-family);
+    letter-spacing: var(--header-letter-spacing);
 }
 
 h1 {
@@ -112,6 +113,7 @@ h1 {
     transition: 1s;
     line-height: var(--header1-line-height);
     font-family: var(--header-primary-font-family);
+    letter-spacing: 0;
 }
 
 h2 {
@@ -237,6 +239,10 @@ footer a:hover,
 
 .color-b {
     color: var(--accent-color-play-b)
+}
+
+.color-d {
+    color: var(--accent-color-play-d)
 }
 
 #document-container {
@@ -432,13 +438,22 @@ a.hamburger-menu,
 
 /* mobile phones and small devices */
 @media only screen and (max-width: 628px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+
     #document-container {
         padding-left: var(--indent-5x);
         padding-right: var(--indent-5x);
     }
+
     main#content {
         padding-bottom: 0;
-    }    
+    }
+
     img#logo {
         width: 128px;
     }
@@ -498,7 +513,7 @@ a.hamburger-menu,
     article.row-content {
         padding: var(--indent-10x) var(--indent-5x);
     }
-    
+
     footer {
         padding: var(--indent-10x) var(--indent-6x) 0;
     }

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/typography.css" type="text/css">
+    <link rel="stylesheet" href="../css/forms.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,18 +51,19 @@
         <main id="content">
             <div class="content-wrapper">
                 <article class="row-content variation-one">
-                    <h2>Sign in</h2>
-                    <p>Enim non occaecat nostrud Lorem est ipsum et in voluptate cupidatat in. Tempor officia culpa
-                        ex nisi ullamco consectetur qui non nulla. Anim tempor aliquip occaecat aliqua laborum in
-                        consectetur sunt eu occaecat aliquip duis incididunt.</p>
-                    <p>Eiusmod ad fugiat sit est aute. Ad incididunt non cillum quis occaecat enim id.
-                        Incididunt ea
-                        nulla
-                        dolor quis culpa dolore esse. </p>
-                    <div class="button-container">
-                        <a class="button primary" href="#">Go Play</a>
-                        <a class="button third" href="#">Register</a>
-                    </div>
+                    <h2>Sign in to Candy Game</h2>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <label for="email">Email:</label>
+                            <input type="email" id="mail" name="user_email">
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="user_password">
+                        </fieldset>
+
+                        <button type="submit">Sign in</button>
+
+                    </form>
                 </article>
                 <article class="row-content variation-two">
                     <h3 class="color-b">Trusted Friends for holding Candy Basket</h2>
