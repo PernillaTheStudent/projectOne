@@ -98,8 +98,7 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     color: var(--header-primary-color);
     font-weight: var(--header-font-weight);
     padding-bottom: var(--indent-3x);
@@ -238,10 +237,6 @@ footer a:hover,
 
 .color-b {
     color: var(--accent-color-play-b)
-}
-
-.color-d {
-    color: var(--accent-color-play-d)
 }
 
 #document-container {
@@ -446,7 +441,7 @@ footer .column.second {
 }
 
 /* mobile phones and small devices */
-@media only screen and (max-width: 628px) {
+@media only screen and (max-width: 690px) {
     h2 {
         font-size: 3rem;
     }
