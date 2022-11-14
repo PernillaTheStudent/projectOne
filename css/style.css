@@ -160,7 +160,10 @@ footer a:hover,
 .top-navigation a:hover {
     color: var(--font-color-primary);
 }
-
+.active-icon {
+    width: 28px;
+    padding-left: var(--indent-2x);
+}
 .button,
 .button:link {
     letter-spacing: var(--link-letter-spacing);
@@ -218,10 +221,7 @@ footer a:hover,
 }
 
 .button-container .button {
-    xflex: 1 0 auto;
     flex-grow: 1;
-    xflex-basis:content;
-    xflex: 1 0 fit-content;
     text-align: center;
 }
 
@@ -494,7 +494,6 @@ footer .column.second {
         position: fixed;
         top: 0;
         right: -150%;
-        xmargin-top: 220px;
         transition: right 1s;
         padding: var(--indent-8x) var(--indent-8x) 56px;
         border-radius: 0 0 0 40px;
