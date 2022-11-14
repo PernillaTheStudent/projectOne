@@ -410,7 +410,8 @@ footer .column a:hover {
 } */
 
 a.hamburger-menu,
-.mobile-menu {
+.mobile-menu,
+footer .column.second {
     display: none;
 }
 
@@ -458,6 +459,7 @@ a.hamburger-menu,
     #document-container {
         padding-left: var(--indent-5x);
         padding-right: var(--indent-5x);
+        padding-bottom: 80px;
     }
 
     main#content {
