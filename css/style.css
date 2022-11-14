@@ -513,7 +513,12 @@ a.hamburger-menu,
     article.row-content {
         padding: var(--indent-10x) var(--indent-5x);
     }
-
+    .row-content.rounded {
+        border-radius: 0 0 var(--indent-5x) 0;       
+    }
+    .aside.empty {
+        padding: 0;
+    }
     footer {
         padding: var(--indent-10x) var(--indent-6x) 0;
     }

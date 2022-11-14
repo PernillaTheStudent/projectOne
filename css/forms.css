@@ -27,13 +27,13 @@ select {
     color: var(--font-color-primary);
     margin: var(--indent-2x) 0 0;
     border-radius: var(--indent-2x);
+    appearance: none;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
     margin: var(--indent-2x) var(--indent-3x);
 }
-
 select {
     padding: 6px;
     height: 32px;
