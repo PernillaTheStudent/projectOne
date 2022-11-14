@@ -58,7 +58,7 @@ button {
     flex: 1 0 auto;
     text-align: center;
 }
-button.button.primary {
+button.button.secondary {
     background-color: var(--accent-color-play-d);
     flex: 1 0 50%;
 }
