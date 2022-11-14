@@ -80,6 +80,8 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -148,7 +150,7 @@ footer a:link,
     color: var(--accent-color);
     font-size: var(--link-font-size);
     text-decoration: none;
-    line-height: 120%;
+    line-height: 100%;
     font-weight: var(--font-paragraph-medium);
 }
 
@@ -197,12 +199,12 @@ footer a:hover,
 
 .button.secondary,
 .button.secondary:link {
+    color: var(--accent-color-alert);
     color: var(--font-color-secondary);
-}
-
-.button.secondary {
+    color: var(--accent-color);
     background-color: var(--accent-color-alert);
     background-color: var(--accent-color);
+    background-color: var(--accent-color-play-d);
 }
 
 .button.secondary:hover {
@@ -328,11 +330,11 @@ main#content {
     width: 100%;
 }
 
-.row-content {
+article.row-content {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 0 100%;
-    padding-left: 3rem;
+    flex: 1 0 auto;
+    padding: var(--indent-10x);
 }
 
 .variation-one {
@@ -341,11 +343,6 @@ main#content {
 
 .variation-two {
     background: var(--background-color-light-b);
-}
-
-article {
-    flex: 1 0 25%;
-    padding: 40px;
 }
 
 .aside {
@@ -393,7 +390,7 @@ footer .column {
 
 footer .column a,
 footer .column a:link {
-    padding: var(--indent-4x) var(--indent-6x);
+    padding: var(--indent-2x) var(--indent-6x);
     align-items: flex-start;
 }
 
@@ -439,7 +436,9 @@ a.hamburger-menu,
         padding-left: var(--indent-5x);
         padding-right: var(--indent-5x);
     }
-
+    main#content {
+        padding-bottom: 0;
+    }    
     img#logo {
         width: 128px;
     }
@@ -494,5 +493,13 @@ a.hamburger-menu,
 
     #banner h1 {
         padding-top: 67px;
+    }
+
+    article.row-content {
+        padding: var(--indent-10x) var(--indent-5x);
+    }
+    
+    footer {
+        padding: var(--indent-10x) var(--indent-6x) 0;
     }
 }

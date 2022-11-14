@@ -7,16 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/typography.css" type="text/css">
+    <link rel="stylesheet" href="../css/forms.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="document-container">
         <header>
-            <img id="logo" src="../images/Logo.png" alt="LOGO" />
+            <a href="index.html"><img id="logo" src="../images/Logo.png" alt="Logo Candy Game"
+                    title="Logo Candy Game" /></a>
             <nav>
-                <div id="top-navigation">
-                    <a href="#">Playground</a>
-                    <a href="#">Contact</a>
+                <div class="top-navigation align-items">
+                    <a class="button primary" href="playground.html" id="playground">Playground</a>
+                    <div class="top-nav-right">
+                        <a class="hamburger-menu" href="#">
+                            <img id="hamburger-menu-icon" src="../images/hamburger-menu.png" width="100%"
+                                alt="Mobile menu" title="Mobile menu">
+                        </a>
+                        <div class="mobile-menu">
+                            <a href="playground.html">Playground</a>
+                            <a href="signin.html">Sign in</a>
+                            <a href="#">Register</a>
+                        </div>
+                        <a class="button secondary" href="signin.html" id="sign-in">Sign in</a>
+                        <a href="#" id="register">Register</a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -29,60 +50,79 @@
 
         <main id="content">
             <div class="content-wrapper">
-                <div class="row-content variation-one">
-                    <article>
-                        <h2>The Journey Begins</h2>
-                        <p>Eiusmod ad fugiat sit est aute. Ad incididunt non cillum quis occaecat enim id.
-                            Incididunt ea
-                            nulla
-                            dolor quis culpa dolore esse. </p>
-                    </article>
-                </div>
-                <div class="row-content variation-two">
-                    <article>
-                        <h2>Trusted Friends for holding Candy Basket</h2>
-                        <p>Reprehenderit laboris pariatur occaecat nulla incididunt anim ex id id esse. Proident
-                            mollit
-                            sunt
-                            cupidatat magna eiusmod voluptate fugiat sint tempor dolor incididunt voluptate. Nisi
-                            pariatur
-                            aliquip non officia cupidatat. Nostrud aute magna ad do laboris sunt est aliquip sit
-                            occaecat
-                            aute in ut.</p>
-                    </article>
-                </div>
+                <article class="row-content variation-one">
+                    <h2>Entrance to Candy Game</h2>
+                    <p>Register here to be able to play Candy Game.</p>
+                    <form action="index.html" method="post">
+                        <fieldset>
+
+                            <legend><span class="number">1</span> Your Basic Info</legend>
+
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name">
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="mail" name="user_email">
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="user_password">
+
+                            <label>Age:</label>
+                            <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18"
+                                class="age">Under 18</label><br>
+                            <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18"
+                                class="age">Over 18</label>
+
+                        </fieldset>
+                        <fieldset class="favorite-candy">
+                            <legend><span class="number">2</span> Your Favorite Candy</legend>
+                            <label for="candy">These are my favorite candies:</label>
+                            <textarea id="candy" name="user_candy"></textarea>
+
+                            <label>Yes, I want the latest news from Candy Games </label><br>
+                            <input type="checkbox" id="newsletter" value="newsletter" name="newsletter">
+                                <label class="news" for="newsletter">Candy Games sweetest newsletter</label>
+                        </fieldset>
+
+                        <button type="submit">Sign Up</button>
+
+                    </form>
+                </article>
+            </div>
+            <div class="aside">
+                <section class="game-items">
+                    <div class="image">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
+                    </div>
+                    <div class="image">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
+                    </div>
+                    <div class="image">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
+                    </div>
+                    <div class="image">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
+                    </div>
+                    <div class="image">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
+                    </div>
+                    <div class="image">
+                        <img src="../images/black-cat.png" width="100%" xheight="100%" alt="black cat">
+                    </div>
+                </section>
             </div>
         </main>
-        
-        <div class="aside">
-            <section class="game-items">
-                <div class="image">
-                    <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
-                </div>
-                <div class="image">
-                    <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
-                </div>
-                <div class="image">
-                    <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
-                </div>
-                <div class="image">
-                    <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
-                </div>
-                <div class="image">
-                    <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
-                </div>
-                <div class="image">
-                    <img src="../images/black-cat.png" width="100%" height="100%" alt="black cat">
-                </div>
-            </section>
-        </div>
         <footer>
-            <button type="button">Log In</button>
-            <nav id="main-navigation">
-                <a href="#">Playground</a>
+            <div class="column first">
+                <a href="playground.html">Playground</a>
+                <a href="signin.html">Sign in</a>
+                <a href="#">Register</a>
+            </div>
+            <div class="column second">
+                <a href="#">Help</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-            </nav>
+            </div>
         </footer>
     </div>
 </body>

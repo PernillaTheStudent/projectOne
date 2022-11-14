@@ -1,0 +1,104 @@
+form {
+    width: 100%;
+    padding: var(--indent-2x);
+    border-radius: var(--indent-2x);
+    font-family: var(--font-family);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: var(--background-color-primary);
+    border: none;
+    font-size: var(--font-size-paragraph);
+    height: auto;
+    outline: 0;
+    padding: var(--indent-4x);
+    width: 100%;
+    color: var(--font-color-primary);
+    margin: var(--indent-2x) 0 0;
+    border-radius: var(--indent-2x);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: var(--indent-2x) var(--indent-3x);
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+button {
+    padding: var(--indent-4x) var(--indent-6x);
+    color: var(--accent-color);
+    background: var(--accent-color-play-d);
+    font-size: var(--link-font-size);
+    text-align: center;
+    font-weight: var(--font-paragraph-medium);
+    border-radius: var(--indent-2x);
+    width: 100%;
+    margin-bottom: var(--indent-3x);
+    border: none;
+    appearance: none;
+}
+
+button:hover {
+    background-color: var(--background-color-secondary);
+    color: var(--accent-color);
+}
+
+fieldset {
+    margin-bottom: var(--indent-10x);
+    border: none;
+}
+
+legend {
+    font-size: var(--font-size-paragraph);
+    margin-bottom: var(--indent-3x);
+    font-weight: var(--font-paragraph-medium);
+}
+
+label {
+    font-size: var(--font-size-paragraph);
+    display: block;
+    margin-top: var(--indent-6x);
+    line-height: 140%;
+}
+
+label.age {
+    display: inline-block;
+    margin: 0;
+    margin: var(--indent-2x) 0 0;
+}
+label.news {
+    display: inline;
+    margin-top: var(--indent-5x);
+}
+textarea {
+    margin-bottom: var(--indent-4x);
+}
+
+.number {
+    background-color: var(--accent-color-play-b);
+    color: var(--font-color-secondary);
+    height: var(--indent-10x);
+    width: var(--indent-10x);
+    display: inline-block;
+    font-size: var(--font-size-paragraph);
+    margin-right: var(--indent-2x);
+    line-height: var(--indent-10x);
+    text-align: center;
+    border-radius: 100%;
+}
