@@ -1,8 +1,8 @@
 form {
-    width: 100%;
-    padding: var(--indent-2x) 0;
     border-radius: var(--indent-2x);
     font-family: var(--font-family);
+    padding: var(--indent-2x) 0;
+    width: 100%;
 }
 
 input[type="text"],
@@ -17,18 +17,18 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
+    appearance: none;
     background: var(--background-color-primary);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     border: none;
+    border-radius: var(--indent-2x);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    color: var(--font-color-primary);
     font-size: var(--font-size-paragraph);
     height: auto;
     outline: 0;
     padding: var(--indent-4x);
-    width: 100%;
-    color: var(--font-color-primary);
     margin: var(--indent-2x) 0 0;
-    border-radius: var(--indent-2x);
-    appearance: none;
+    width: 100%;
 }
 
 input[type="radio"],
@@ -36,27 +36,26 @@ input[type="checkbox"] {
     margin: var(--indent-2x) var(--indent-3x);
 }
 select {
-    padding: 6px;
-    height: 32px;
     border-radius: 2px;
+    height: 32px;
+    padding: 6px;
 }
 
 button {
-    padding: var(--indent-4x) var(--indent-6x);
+    appearance: none;
     color: var(--accent-color);
     background: var(--accent-color-play-d);
     background: none;
-    font-size: var(--link-font-size);
-    text-align: center;
-    font-weight: var(--font-paragraph-medium);
     border-radius: var(--indent-2x);
-    width: 100%;
-    margin-bottom: var(--indent-3x);
     border: none;
-    appearance: none;
-    letter-spacing: var(--link-letter-spacing);
     flex: 1 1;
+    font-size: var(--link-font-size);
+    font-weight: var(--font-paragraph-medium);
+    letter-spacing: var(--link-letter-spacing);
+    margin-bottom: var(--indent-3x);
+    padding: var(--indent-4x) var(--indent-6x);
     text-align: center;
+    width: 100%;
 }
 button.button.secondary {
     background-color: var(--accent-color-play-d);
@@ -71,21 +70,21 @@ button:hover {
 }
 
 fieldset {
-    margin-bottom: var(--indent-10x);
     border: none;
+    margin-bottom: var(--indent-10x);
 }
 
 legend {
     font-size: var(--font-size-paragraph);
-    margin-bottom: var(--indent-3x);
     font-weight: var(--font-paragraph-medium);
+    margin-bottom: var(--indent-3x);
 }
 
 label {
-    font-size: var(--font-size-paragraph);
     display: block;
-    margin-top: var(--indent-4x);
+    font-size: var(--font-size-paragraph);
     line-height: 140%;
+    margin-top: var(--indent-4x);
 }
 
 label.age {
@@ -103,13 +102,13 @@ textarea {
 
 .number {
     background-color: var(--accent-color-play-b);
+    border-radius: 100%;
     color: var(--font-color-secondary);
-    height: var(--indent-10x);
-    width: var(--indent-10x);
     display: inline-block;
     font-size: var(--font-size-paragraph);
-    margin-right: var(--indent-2x);
+    height: var(--indent-10x);
     line-height: var(--indent-10x);
+    margin-right: var(--indent-2x);
     text-align: center;
-    border-radius: 100%;
+    width: var(--indent-10x);
 }
