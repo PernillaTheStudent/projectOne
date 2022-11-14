@@ -494,7 +494,7 @@ footer .column.second {
         background-color: var(--background-color-primary);
         position: fixed;
         right: -150%;
-        margin-top: 248px;
+        margin-top: 220px;
         transition: right 1s;
         padding: var(--indent-8x) var(--indent-8x) 56px;
         border-radius: 0 0 0 40px;
@@ -503,9 +503,16 @@ footer .column.second {
 
     .mobile-menu a,
     .mobile-menu a:link {
-        padding: 0 var(--indent-4x) var(--indent-4x);
+        padding: var(--indent-4x) 50px;
+        margin-left: -32px;
+        margin-right: -32px;
     }
-
+    .mobile-menu a:hover {
+        background-color: var(--background-color-light-a);
+    }
+    .active {
+        background-color: var(--background-color-light-b);
+    }
     h1 {
         font-size: calc(0.5 * var(--header1-font-size));
     }
