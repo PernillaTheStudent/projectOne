@@ -218,10 +218,10 @@ footer a:hover,
 }
 
 .button-container .button {
-    flex: 1 0 auto;
+    xflex: 1 0 auto;
     flex-grow: 1;
-    flex-basis:content;
-    flex: 1 0 fit-content;
+    xflex-basis:content;
+    xflex: 1 0 fit-content;
     text-align: center;
 }
 
@@ -492,8 +492,9 @@ footer .column.second {
         display: block;
         background-color: var(--background-color-primary);
         position: fixed;
+        top: 0;
         right: -150%;
-        margin-top: 220px;
+        xmargin-top: 220px;
         transition: right 1s;
         padding: var(--indent-8x) var(--indent-8x) 56px;
         border-radius: 0 0 0 40px;
