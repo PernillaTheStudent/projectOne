@@ -1,3 +1,15 @@
+*************************************
+
+Updated 16-11-2022
+
+Hi Pernilla!
+
+Thanks for fixing the contact form. The only very minor thing missing is that the "message" input should also be a required input. Fix it if you like, but you've already demonstrated that you undertand how to make a field required (as well as every other requirement of the assignemnt), so I am happy to say you've covered all the requirements for a Välgodkänt grade, and there is no ned to resubmit.
+
+Congratulations! And once again this is a great looking and working site, you have a talent for this.
+
+*************************************
+
 Hi Pernilla!
 
 Although the design is not assessed in this assignment I have to say your site looks very, very nice! The coding is first rate and you should be proud of what you have produced. As you can see below you have ticked off nearly all the requirements of the assignment.
